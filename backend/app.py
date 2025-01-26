@@ -2,7 +2,6 @@ from flask import Flask, request, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from flask_cors import CORS
 from datetime import datetime, timedelta
-from modules import *
 from logger import *
 from flask_migrate import Migrate
 
@@ -70,6 +69,8 @@ class Loan(db.Model):
     LoanDate = db.Column(db.Date, nullable=True)
     ReturnDate = db.Column(db.Date, nullable=False)
     Phone_Number = db.Column(db.String(200), nullable=True)
+
+    
     
 
     def __init__(self, CustID, BookID, LoanDate=None, ReturnDate=None, Phone_Number=None, Type=0):

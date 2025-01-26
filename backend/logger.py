@@ -25,6 +25,7 @@ def process_request(data):
         logger.error("An error occurred: %s", e)
     except Exception as e:
         logger.critical("Unexpected error: %s", e)
+         
 
 # Call the function
 process_request({"key": "value"})  # Example with valid data
