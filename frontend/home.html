@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend with Axios</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .response {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Library Management</h1>
+
+    <form id="bookForm">
+        <h2>Add a Book</h2>
+        <label for="bookTitle">Title:</label>
+        <input type="text" id="bookTitle" name="title" required>
+
+        <label for="bookAuthor">Author:</label>
+        <input type="text" id="bookAuthor" name="author" required>
+
+        <label for="bookYear">Year Published:</label>
+        <input type="text" id="bookYear" name="year_published" required>
+
+        <label for="bookKind">Kind:</label>
+        <input type="text" id="bookKind" name="kind" required>
+
+        <button type="submit">Submit Book</button>
+    </form>
+
+    <form id="customerForm">
+        <h2>Add a Customer</h2>
+        <label for="customerName">Name:</label>
+        <input type="text" id="customerName" name="Name" required>
+
+        <label for="customerCity">City:</label>
+        <input type="text" id="customerCity" name="City">
+
+        <label for="customerAge">Age:</label>
+        <input type="number" id="customerAge" name="Age" required>
+
+        <label for="customerPhone">Phone Number:</label>
+        <input type="text" id="customerPhone" name="Phone_Number">
+
+        <button type="submit">Submit Customer</button>
+    </form>
+
+    <form id="loanForm">
+        <h2>Add a Loan</h2>
+        <label for="loanCustID">Customer ID:</label>
+        <input type="number" id="loanCustID" name="CustID" required>
+
+        <label for="loanBookID">Book ID:</label>
+        <input type="text" id="loanBookID" name="BookID" required>
+
+        <label for="loanDate">Loan Date:</label>
+        <input type="date" id="loanDate" name="LoanDate">
+
+        <label for="returnDate">Return Date:</label>
+        <input type="date" id="returnDate" name="ReturnDate" required>
+
+        <label for="loanPhone">Phone Number:</label>
+        <input type="text" id="loanPhone" name="Phone_Number">
+
+        <button type="submit">Submit Loan</button>
+    </form>
+
+    <div class="response" id="response"></div>
+
+    <script>
+        const responseDiv = document.getElementById('response');
+
+        document.getElementById('bookForm').addEventListener('submit', async (event) => {
+            event.preventDefault();
+            const bookData = {
+                title: document.getElementById('bookTitle').value,
+                author: document.getElementById('bookAuthor').value,
+                year_published: document.getElementById('bookYear').value,
+                kind: document.getElementById('bookKind').value,
+            };
+
+            try {
+                const response = await axios.post('http://127.0.0.1:5000/books', bookData);
+                responseDiv.textContent = 'Book submitted successfully: ' + JSON.stringify(response.data);
+                responseDiv.style.color = 'green';
+            } catch (error) {
+                responseDiv.textContent = 'Error submitting book: ' + error.message;
+                responseDiv.style.color = 'red';
+            }
+        });
+
+        document.getElementById('customerForm').addEventListener('submit', async (event) => {
+            event.preventDefault();
+            const customerData = {
+                Name: document.getElementById('customerName').value,
+                City: document.getElementById('customerCity').value,
+                Age: document.getElementById('customerAge').value,
+                Phone_Number: document.getElementById('customerPhone').value,
+            };
+
+            try {
+                const response = await axios.post('http://127.0.0.1:5000', customerData);
+                responseDiv.textContent = 'Customer submitted successfully: ' + JSON.stringify(response.data);
+                responseDiv.style.color = 'green';
+            } catch (error) {
+                responseDiv.textContent = 'Error submitting customer: ' + error.message;
+                responseDiv.style.color = 'red';
+            }
+        });
+
+        document.getElementById('loanForm').addEventListener('submit', async (event) => {
+            event.preventDefault();
+            const loanData = {
+                CustID: document.getElementById('loanCustID').value,
+                BookID: document.getElementById('loanBookID').value,
+                LoanDate: document.getElementById('loanDate').value || null,
+                ReturnDate: document.getElementById('returnDate').value,
+                Phone_Number: document.getElementById('loanPhone').value,
+            };
+
+            try {
+                const response = await axios.post('http://127.0.0.1:5000', loanData);
+                responseDiv.textContent = 'Loan submitted successfully: ' + JSON.stringify(response.data);
+                responseDiv.style.color = 'green';
+            } catch (error) {
+                responseDiv.textContent = 'Error submitting loan: ' + error.message;
+                responseDiv.style.color = 'red';
+            }
+        });
+    </script>
+</body>
+</html>
