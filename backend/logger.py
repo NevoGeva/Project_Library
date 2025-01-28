@@ -5,8 +5,8 @@ logging.basicConfig(
     level=logging.INFO,  # Set logging level
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
     handlers=[
-        logging.FileHandler("app.log"),  # Logs to a file
-        logging.StreamHandler()  # Logs to console
+        logging.FileHandler("app.log"),  
+        logging.StreamHandler()  
     ]
 )
 
@@ -27,6 +27,6 @@ def process_request(data):
         logger.critical("Unexpected error: %s", e)
          
 
-# Call the function
-process_request({"key": "value"})  # Example with valid data
-process_request(None)  # Example with invalid data
+
+process_request({"key": "value"})  
+process_request(None) 
