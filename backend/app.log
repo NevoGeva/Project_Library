@@ -1895,3 +1895,67 @@
 2025-01-26 10:57:36,838 - BackendLogger - ERROR - An error occurred: Invalid data provided
 2025-01-26 10:57:36,903 - werkzeug - WARNING -  * Debugger is active!
 2025-01-26 10:57:36,912 - werkzeug - INFO -  * Debugger PIN: 108-899-997
+2025-01-28 10:13:25,996 - BackendLogger - INFO - Processing request with data: {'key': 'value'}
+2025-01-28 10:13:25,996 - BackendLogger - INFO - Processing request with data: None
+2025-01-28 10:13:25,996 - BackendLogger - ERROR - An error occurred: Invalid data provided
+2025-01-28 10:13:26,210 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-28 10:13:26,210 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-28 10:13:26,211 - werkzeug - INFO -  * Restarting with stat
+2025-01-28 10:13:26,387 - BackendLogger - INFO - Processing request with data: {'key': 'value'}
+2025-01-28 10:13:26,388 - BackendLogger - INFO - Processing request with data: None
+2025-01-28 10:13:26,388 - BackendLogger - ERROR - An error occurred: Invalid data provided
+2025-01-28 10:13:26,452 - werkzeug - WARNING -  * Debugger is active!
+2025-01-28 10:13:26,462 - werkzeug - INFO -  * Debugger PIN: 598-594-303
+2025-01-28 10:28:36,992 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 10:28:36] "OPTIONS / HTTP/1.1" 200 -
+2025-01-28 10:28:36,995 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 10:28:36] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2025-01-28 10:32:03,504 - BackendLogger - INFO - Processing request with data: {'key': 'value'}
+2025-01-28 10:32:03,504 - BackendLogger - INFO - Processing request with data: None
+2025-01-28 10:32:03,504 - BackendLogger - ERROR - An error occurred: Invalid data provided
+2025-01-28 10:34:55,512 - BackendLogger - INFO - Processing request with data: {'key': 'value'}
+2025-01-28 10:34:55,512 - BackendLogger - INFO - Processing request with data: None
+2025-01-28 10:34:55,512 - BackendLogger - ERROR - An error occurred: Invalid data provided
+2025-01-28 10:34:55,618 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-28 10:34:55,618 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-28 10:34:55,619 - werkzeug - INFO -  * Restarting with stat
+2025-01-28 10:34:55,820 - BackendLogger - INFO - Processing request with data: {'key': 'value'}
+2025-01-28 10:34:55,820 - BackendLogger - INFO - Processing request with data: None
+2025-01-28 10:34:55,820 - BackendLogger - ERROR - An error occurred: Invalid data provided
+2025-01-28 10:34:55,889 - werkzeug - WARNING -  * Debugger is active!
+2025-01-28 10:34:55,900 - werkzeug - INFO -  * Debugger PIN: 598-594-303
+2025-01-28 10:37:46,115 - BackendLogger - INFO - Processing request with data: {'key': 'value'}
+2025-01-28 10:37:46,115 - BackendLogger - INFO - Processing request with data: None
+2025-01-28 10:37:46,115 - BackendLogger - ERROR - An error occurred: Invalid data provided
+2025-01-28 10:37:46,219 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-28 10:37:46,219 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-28 10:37:46,220 - werkzeug - INFO -  * Restarting with stat
+2025-01-28 10:37:46,431 - BackendLogger - INFO - Processing request with data: {'key': 'value'}
+2025-01-28 10:37:46,431 - BackendLogger - INFO - Processing request with data: None
+2025-01-28 10:37:46,431 - BackendLogger - ERROR - An error occurred: Invalid data provided
+2025-01-28 10:37:46,497 - werkzeug - WARNING -  * Debugger is active!
+2025-01-28 10:37:46,506 - werkzeug - INFO -  * Debugger PIN: 598-594-303
+2025-01-28 10:38:10,831 - werkzeug - INFO -  * Detected change in '/Users/nevo/Project_Library/Project_Library/backend/app.py', reloading
+2025-01-28 10:38:10,913 - werkzeug - INFO -  * Restarting with stat
+2025-01-28 10:38:11,234 - BackendLogger - INFO - Processing request with data: {'key': 'value'}
+2025-01-28 10:38:11,234 - BackendLogger - INFO - Processing request with data: None
+2025-01-28 10:38:11,234 - BackendLogger - ERROR - An error occurred: Invalid data provided
+2025-01-28 10:38:11,326 - werkzeug - WARNING -  * Debugger is active!
+2025-01-28 10:38:11,335 - werkzeug - INFO -  * Debugger PIN: 598-594-303
+2025-01-28 10:38:12,349 - werkzeug - INFO -  * Detected change in '/Users/nevo/Project_Library/Project_Library/backend/app.py', reloading
+2025-01-28 10:38:12,435 - werkzeug - INFO -  * Restarting with stat
+2025-01-28 10:38:12,672 - BackendLogger - INFO - Processing request with data: {'key': 'value'}
+2025-01-28 10:38:12,672 - BackendLogger - INFO - Processing request with data: None
+2025-01-28 10:38:12,673 - BackendLogger - ERROR - An error occurred: Invalid data provided
+2025-01-28 10:38:12,740 - werkzeug - WARNING -  * Debugger is active!
+2025-01-28 10:38:12,747 - werkzeug - INFO -  * Debugger PIN: 598-594-303
+2025-01-28 10:38:16,801 - werkzeug - INFO -  * Detected change in '/Users/nevo/Project_Library/Project_Library/backend/app.py', reloading
+2025-01-28 10:38:16,874 - werkzeug - INFO -  * Restarting with stat
+2025-01-28 10:38:17,104 - BackendLogger - INFO - Processing request with data: {'key': 'value'}
+2025-01-28 10:38:17,104 - BackendLogger - INFO - Processing request with data: None
+2025-01-28 10:38:17,104 - BackendLogger - ERROR - An error occurred: Invalid data provided
+2025-01-28 10:38:17,174 - werkzeug - WARNING -  * Debugger is active!
+2025-01-28 10:38:17,182 - werkzeug - INFO -  * Debugger PIN: 598-594-303
+2025-01-28 10:38:31,987 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 10:38:31] "OPTIONS /books HTTP/1.1" 200 -
+2025-01-28 10:38:32,006 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 10:38:32] "[35m[1mPOST /books HTTP/1.1[0m" 201 -

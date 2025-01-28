@@ -10,7 +10,7 @@ from flask_migrate import Migrate
 
 # Initialize the Flask application
 app = Flask(__name__)
-CORS(app)
+CORS(app, origins=["http://127.0.0.1:5500"] )
 
 
 
